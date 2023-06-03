@@ -1,0 +1,1117 @@
+:root   {
+    /* BACKGROUND COLORS */
+    --backgroundGray: #F6F7F9;
+    --backgroundWhite: #FFFFFF;
+    --buttonBlue: #00A9C9;
+    --buttonHover: #00AEEF;
+    --textBlack: #1B2733;
+    --textGray: #637282;
+    --textWhite: #FFFFFF;
+}
+
+
+
+/**************************************************************
+                    COMMON STYLES
+**************************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Enables smooth scrolling of the page  */
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button{
+    margin-top: 10px;
+    background: var(--buttonBlue);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    border: none;
+    font-size: 1em;
+    letter-spacing: 0.8px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    display: block;
+    text-align: center;
+    border-radius: 2px !important;
+    font-weight: 600 !important;
+}
+
+button:hover,
+button:focus{
+    background-color: var(--buttonHover);
+    color: var(--textWhite);
+    box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
+}
+
+.heading{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: -0.3px;
+    color: var(--textBlack);
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.subheading{
+    font-size: 1em;
+    color: var(--textGray);
+    line-height: 22px;
+    margin-top: -8px;
+    letter-spacing: -0.1px;
+    text-align: center;
+}
+
+
+
+/**************************************************************
+                    PRELOADER STYLES
+**************************************************************/
+#loading{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #fff url('assets/images/preloader.gif') no-repeat center;
+background-size: 430px 370px;
+z-index: 99999999999999999999999999;
+}
+
+
+
+/**************************************************************
+                    LANDING PAGE STYLES
+**************************************************************/
+#landingPageSection #header{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    transition: 0.6s;
+}
+
+#landingPageSection #header.sticky{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+#landingPageSection #header nav{
+    background: transparent;
+    padding: 0.2rem 1rem;
+}
+
+#landingPageSection #header.sticky nav{
+    background: var(--backgroundWhite);
+}
+
+#landingPageSection #header nav a i{
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 5px;
+    text-align: center;
+    color: var(--textBlack);
+}
+
+#landingPageSection #header nav a{
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 13px;
+    text-align: center;
+    color: var(--textBlack);
+}
+
+#landingPageSection #header nav a:hover{
+    opacity: 0.9;
+    color: var(--buttonHover);
+}
+
+#landingPageSection .navbar img{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#landingPageSection .toButton{
+    text-align: center;
+    border-radius: 2rem;
+    background: var(--buttonBlue);
+    padding: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#landingPageSection a.toButton:hover{
+    background-color: var(--buttonHover);
+    color: var(--textWhite);
+    box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
+}
+
+#landingPageSection #rangeImage img{
+    height: 100vh;
+}
+
+
+#landingPageSection .special-button{
+    margin-top: 10px;
+    color: var(--textWhite);
+    border: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2rem;
+    background: var(--buttonBlue);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: var(--textWhite);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#landingPageSection .special-button:hover{
+    background-color: var(--buttonHover);
+    color: var(--textWhite);
+    box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
+}
+
+
+
+/**************************************************************
+                    SCROLL TO BOTTOM INDICATOR STYLES
+**************************************************************/
+.arrow {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-bottom: 5px solid var(--textBlack);
+    border-right: 5px solid var(--textBlack);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-15px, -15px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(15px, 15px);
+    }
+}
+
+
+
+/**************************************************************
+                    BACK TO TOP BUTTON STYLES
+**************************************************************/
+#button{
+    display: inline-block;
+    background-color: var(--buttonBlue);
+    width: 65px;
+    height: 65px;
+    padding: 7px;
+    text-align: center;
+    border: 3.5px solid var(--textWhite);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after{
+    content: "";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--buttonHover);
+}
+
+#button:active{
+    background-color: var(--buttonHover);
+}
+
+#button.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
+}
+
+
+
+/**************************************************************
+                    ABOUT US STYLES
+**************************************************************/
+/*#aboutUsSection{
+    background: url("assets/images/about_us/about_bg.png") fixed no-repeat;
+}*/
+
+#aboutUsSection img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+#aboutUsSection .sectional_heading{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--textBlack);
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+#aboutUsSection .rightPara{
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /*letter-spacing: -0.1px;*/
+    color: var(--textGray);
+}
+
+#aboutUsSection #ourAim{
+    margin-top: 30px;
+}
+
+#aboutUsSection #ourAim img{
+    max-width: 420px;
+    max-height: 420px;
+}
+
+#aboutUsSection #ourGoals{
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+#aboutUsSection #ourGoals img{
+    max-width: 450px;
+    max-height: 450px;
+}
+
+
+
+/**************************************************************
+                    PRODUCT CATEGORY STYLES
+**************************************************************/
+#productsSection{
+    background-color: var(--backgroundGray);
+    padding-bottom: 10px;
+}
+
+#productsSection .service-image{
+    width: 100%;
+    height: 100%;
+    width: 290px;
+    height: 290px;
+    border-color: rgba(175, 92, 207, 0.3);
+    border-style: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .25s ease-in-out;
+}
+
+#productsSection h3{
+    text-transform: initial;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 13px 0 10px;
+    line-height: 1.1em;
+}
+
+#productsSection .service-image:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    /*transition: all ease 0.4s;*/
+}
+
+
+
+/**************************************************************
+                    CONTACT US STYLES
+**************************************************************/
+#contactUsSection{
+    margin-top: 10px;
+    padding-bottom: 43px;
+    background-color: var(--backgroundGray);
+}
+
+/*#contactUsSection .card{
+    min-height: 380px;
+}*/
+
+#contactUsSection .card-header{
+    background-color: var(--buttonBlue);
+}
+
+#contactUsSection .card i{
+    padding-top: 12px;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+#contactUsSection .card span{
+    font-weight: 500;
+}
+
+
+
+/**************************************************************
+                    FOOTER STYLES
+**************************************************************/
+#footerSection{
+    background: var(--buttonBlue);
+    padding: 3px 0 10px;
+}
+
+#footerSection p{
+    color: var(--textWhite);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+#footerSection p a{
+    color: var(--textWhite);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+#footerSection #social-media-icons{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+#footerSection #social-media-icons i{
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+
+
+
+/**************************************************************
+                    KNOW MORE SECTION STYLES
+**************************************************************/
+#personalInfoSection img{
+    display: block;
+    width: 80%;
+    /*height: 460px;*/
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personalInfoSection .info-points{
+    font-size: 23px;
+}
+
+#personalInfoSection .contentBx h3{
+    text-transform: initial;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 8px auto;
+    line-height: 1.1em;
+}
+
+#personalInfoSection .contentBx h3 span{
+    font-size: 0.7em;
+    font-weight: 500;
+    text-transform: initial;
+}
+
+#personalInfoSection li{
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+li::marker{
+    font-size: 1.5rem;
+    color: var(--buttonBlue);
+}
+
+
+/**************************************************************
+                DETAILED ABOUT US STYLES
+**************************************************************/
+#detailedAboutUsSection img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#detailedAboutUsSection .arrow span{
+    width: 18px;
+    height: 18px;
+}
+
+#detailedAboutUsSection .sectional_heading{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--textBlack);
+    line-height: 22px;
+    margin-top: 52px;
+    margin-bottom: 18px;
+}
+
+#detailedAboutUsSection .rightPara{
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /*letter-spacing: -0.1px;*/
+    color: var(--textGray);
+}
+
+#detailedAboutUsSection #ourAim{
+    margin-top: 10px;
+}
+
+#detailedAboutUsSection #ourAim img{
+    max-width: 850px;
+    max-height: 480px;
+}
+
+#detailedAboutUsSection #ourGoals{
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+#detailedAboutUsSection #ourGoals img{
+    max-width: 550px;
+    max-height: 550px;
+}
+
+#detailedAboutUsSection .introduction{
+    margin-top: 10px;
+}
+
+#detailedAboutUsSection .sectional_heading{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--textBlack);
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+#detailedAboutUsSection img#first{
+    width: 450px;
+    height: 450px;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#detailedAboutUsSection .content{
+    margin-top: 34px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--textGray);
+}
+
+
+
+/**************************************************************
+                AWARDS SECTION STYLES
+**************************************************************/
+#awardsSection img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+#awardsSection .rightPara{
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /*letter-spacing: -0.1px;*/
+    color: var(--textGray);
+}
+
+#awardsSection #para{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#awardsSection #para img{
+    max-width: 420px;
+    max-height: 420px;
+}
+
+
+
+/**************************************************************
+                EXHIBITIONS SECTION STYLES
+**************************************************************/
+#exhibitionsSection div.item{
+    height: 280px;
+    margin: 40px;
+}
+
+#exhibitionsSection div.item img{
+    height: 320px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+#exhibitionsSection div.item figcaption{
+    font-size: 1em;
+    color: var(--textGray);
+    line-height: 22px;
+    font-weight: 600;
+    /*margin-top: -8px;*/
+    letter-spacing: -0.1px;
+    text-align: center;
+}
+
+#exhibitionsSection .owl-nav{
+    margin-bottom: 60px;
+}
+
+#exhibitionsSection div.owl-dots{
+    display: none;
+}
+
+
+
+/**************************************************************
+                PRODUCT DESCRIPTION SECTION STYLES
+**************************************************************/
+#descriptionSection .rightPara{
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--textGray);
+}
+
+#descriptionSection #ourAim{
+    margin-top: 10px;
+}
+
+#descriptionSection #ourAim img{
+    display: block;
+    margin-top: 30px;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+
+
+/**************************************************************
+                ALL PRODUCTS SECTION STYLES
+**************************************************************/
+#allProductsSection .service-image{
+    width: 100%;
+    height: 100%;
+    width: 290px;
+    height: 290px;
+    border-color: rgba(175, 92, 207, 0.3);
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .25s ease-in-out;
+}
+
+#allProductsSection h3{
+    text-transform: initial;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 13px 0 10px;
+    line-height: 1.1em;
+}
+
+#allProductsSection .service-image:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+    /*transition: all ease 0.4s;*/
+}
+
+
+
+/**************************************************************
+                    PRODUCT INFO SECTION
+**************************************************************/
+#productInfoSection {
+    margin-top: 85px;
+}
+
+#productInfoSection .navigation-breadcrumb, 
+#productInfoSection .breadcrumb{
+    background-color: var(--buttonBlue);
+}
+
+#productInfoSection .breadcrumb-item a{
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 3px 3px;
+    color: var(--textBlack);
+}
+
+#productInfoSection .breadcrumb-item.active a{
+    color: var(--textWhite);
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    color: #ccc;
+    content: ">>";
+    padding: 5 5px;
+}
+
+#productInfoSection .breadcrumb{
+    margin-bottom: 0px;    
+}
+
+#productInfoSection .container-fluid.products{
+    padding-left: 94px;
+    padding-right: 94px;
+}
+
+#productInfoSection .remove-left-spacing{
+    padding-left: 0px;
+}
+
+#productInfoSection .remove-right-spacing{
+    padding-right: 0px;
+}
+
+#productInfoSection div.item{
+    margin: 18px 40px;
+    overflow: hidden;
+}
+
+#productInfoSection div.owl-item.active{
+    margin: auto !important;
+}
+
+#productInfoSection div.item img{
+    max-height: 670px;
+    width: 90%;
+    cursor: pointer;
+    transition: transform 0.25s;
+    margin: auto;
+}
+
+#productInfoSection div.item img:hover{
+    transform: scale(1.2);
+}
+
+
+#productInfoSection .owl-prev{
+    height: 30px;
+    width: 30px;
+    padding: 5px !important;
+    border-radius: 50% !important;
+    font-size: 15px;
+    background: #fff;
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,.1);
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    display: block !important;
+}
+
+#productInfoSection .owl-next{
+    height: 30px;
+    width: 30px;
+    padding: 5px !important;
+    border-radius: 50% !important;
+    font-size: 15px;
+    background: #fff;
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,.1);
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    display: block !important;
+}
+
+
+#productInfoSection .owl-prev:hover, #productInfoSection .owl-next:hover{
+    color: var(--textBlack);
+}
+
+#productInfoSection div.owl-dots{
+    display: none;
+}
+
+#productInfoSection .card{
+    background: #fff;
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: auto;
+}
+
+#productInfoSection .nav-pills .nav-item{
+    margin: 4px 4px;
+    padding-bottom: 5px;
+}
+
+#productInfoSection #colourSection.nav-pills .nav-item{
+    margin: 4px 9px;
+}
+
+#productInfoSection #capacitySection.nav-pills .nav-item a{
+    padding: 4px 12px;
+    background: var(--backgroundWhite);
+    border-radius: 15px;
+    border: 2px solid var(--buttonBlue);
+    color: var(--buttonBlue);
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+
+#productInfoSection #colourSection.nav-pills .nav-item a{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#productInfoSection #iconsSection {
+    margin-bottom: 10px;
+}
+
+#productInfoSection #iconsSection .image-container{
+    height: 75px;
+    width: 75px;
+    margin: 10px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#productInfoSection #iconsSection .image-container img{
+    height: 85px;
+    width: 85px;
+    background-size: cover;
+}   
+
+
+#productInfoSection .heading{
+    font-size: 1.8em;
+    font-weight: 500;
+    color: var(--textGray);
+}
+
+#productInfoSection .subheading{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-top: 1px;
+}
+
+#productInfoSection p.description{
+    font-size: 1em;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--buttonBlue);
+}
+
+#productInfoSection span{
+    font-size: 0.78em;
+    font-weight: 600;
+    color: var(--textGray);
+    margin-bottom: 10px;
+}
+
+#productInfoSection hr{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+
+/**************************************************************
+                    CHANGES FOR LARGER DEVICES
+                        (BUT NOT LAPTOPS)
+**************************************************************/
+@media (max-width: 991px){
+    *{
+        font-size: 15.5px;
+    }
+
+    #aboutUsSection #ourAim,
+    #aboutUsSection #ourGoals{
+        text-align: center;
+    }
+
+    #aboutUsSection .sectional_heading{
+        margin-top: 15px;
+    }
+
+    #aboutUsSection #ourGoals{
+        margin-top: 40px;
+    }
+
+    #aboutUsSection img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #teamSection .container .ourCard .content .imgBx{
+        width: 220px;
+        height: 220px;
+    }
+
+    #branchesSection ul li#fifth{
+        border-radius: 50px 0 0 50px;   
+    }
+
+    #branchesSection ul li#fourth{
+        border-radius: 0 50px 50px 0;   
+    }
+
+    #getInTouchSection .card{
+        max-width: 350px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #slider-container div.col-md-4{
+        height: 225px;
+        margin: 40px 0px;
+    }
+
+    #slider-container img{
+        height: 225px;
+        width: 225px;
+        margin: 0 10px;
+        object-fit: cover;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+    }
+
+    #personalInfoSection img{
+        width: 93%;
+    }
+}
+
+
+/**************************************************************
+                    CHANGES FOR TABLETS
+**************************************************************/
+@media (max-width: 767px){
+    #landingPageSection #landingPageCarousel .heading{
+        line-height: 0.99;
+        margin-bottom: 20px;
+    }
+
+    #aboutUsSection #ourAim,
+    #aboutUsSection #ourGoals{
+        text-align: center;
+    }
+
+    #aboutUsSection .sectional_heading{
+        margin-top: 15px;
+    }
+
+    #aboutUsSection #ourGoals{
+        margin-top: 40px;
+    }
+
+    #aboutUsSection img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    #footerSection, #footerSection #social-media-icons{
+        text-align: center;
+    }
+}
+
+
+/**************************************************************
+                    CHANGES FOR MOBILE PHONES
+**************************************************************/
+@media (max-width: 575px){
+    *{
+        font-size: 14.7px;
+    }
+
+    #button{
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #landingPageSection .navbar img{
+        width: 160px;
+        height: 50px;
+    }
+
+    #landingPageSection .phone-button{
+        margin: auto;
+        margin-right: 0px;
+    }
+
+    #landingPageSection #rangeImage img{
+        height: 55vh;
+        padding-top: 80px;
+    }
+
+    .arrow span{
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+
+    #aboutUsSection #ourAim,
+    #aboutUsSection #ourGoals{
+        text-align: center;
+    }
+
+    #aboutUsSection #ourAim button,
+    #aboutUsSection #ourGoals button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutUsSection .sectional_heading{
+        margin-top: 15px;
+    }
+
+    #aboutUsSection #ourGoals{
+        margin-top: 40px;
+    }
+
+    #aboutUsSection img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    #detailedAboutUsSection .sectional_heading{
+        margin-top: 25px;
+    }
+
+    #awardsSection .rightPara{
+        text-align: center;
+    }
+
+    #descriptionSection .rightPara{
+        text-align: center;
+    }
+
+    #productInfoSection {
+       margin-top: 76px;
+    }
+
+    #productInfoSection .heading{
+        font-size: 1.6em;
+    }
+
+    #productInfoSection .subheading{
+        font-size: 1.6em;
+    }
+
+    #footerSection, #footerSection #social-media-icons{
+        text-align: center;
+    }
+
+    #footerSection #social-media-icons{
+        margin-bottom: 1rem;
+    }
+
+}
